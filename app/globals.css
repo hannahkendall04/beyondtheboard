@@ -3,24 +3,47 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent-1: #4cb1ff;
+  --accent-2: #4a4b4b;
+  --accent-3: #d0e6ff;
+  --accent-4: #7cb078;
+  --accent-5: #ff7f2d;
+  --accent-6: #9c7bac;
+  --header-1: #4a4b4b;
+  --header-2: #8a817c;
+  --section-bg: #f5faf5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ededed; 
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--section-bg);
+  font-family: var(--primary-font);
+}
+
+h1 {
+  color: var(--header-1);
+  font-family: var(--primary-font);
+  font-size: 25px;
+}
+
+h2 {
+  color: var(--header-2);
+  font-family: var(--primary-font);
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.page-container {
+  margin-top: 70;
 }

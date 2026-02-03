@@ -1,7 +1,9 @@
 "use client";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import Navbar from "../components/Navbar";
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
+import HeaderOverlay from "./HeaderOverlay";
+import Footer from "./Footer"
 
 interface GenericPageProps {
     route: string, 
@@ -11,14 +13,19 @@ interface GenericPageProps {
 
 }
 
-const  GenericPage: React.FC<GenericPageProps> = ({route, pageTitle, pageSubtitle, pageImageRoute}) => {
+const  GenericPage: React.FC<PropsWithChildren<GenericPageProps>> = ({route, pageTitle, pageSubtitle, pageImageRoute, children}) => {
   return (
     <main>
-      <Navbar route={route}/>
-      <Container className="page-container">
-        <h1>{pageTitle}</h1>
-        <h2>{pageSubtitle && pageSubtitle}</h2>
+      <Navbar route={route} scrollThreshold={75}/>
+      <HeaderOverlay 
+          imageUrl={pageImageRoute} 
+          overlayTextPrimary={pageTitle} 
+          overlayTextSecondary={pageSubtitle}
+      /> 
+      <Container sx={{ marginTop: 0, marginBottom: 3}}>
+        {children}
       </Container>
+      <Footer />
     </main>
   );
 }

@@ -34,7 +34,7 @@ body {
 h1 {
   color: var(--header-1);
   font-family: var(--primary-font);
-  font-size: 25px;
+  font-size: 30px;
 }
 
 h2 {
@@ -44,6 +44,15 @@ h2 {
   font-size: 20px;
 }
 
+p {
+  color: var(--header-2);
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+}
+
 .page-container {
   margin-top: 70;
+  margin-bottom: 20;
 }

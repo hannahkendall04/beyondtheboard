@@ -2,18 +2,20 @@
 import React from 'react';
 import { Container, Stack, Box } from '@mui/material';
 import Image from 'next/image';
+import TextSection from './TextSection'
 
 interface PhotoSectionProps {
     imageUrl: string,
+    sectionHeader?: string,
+    sectionSubheader?: string,
     sectionText: string,
     direction: string
 }
 
 
-const PhotoSection: React.FC<PhotoSectionProps> = ({ imageUrl, sectionText, direction }) => {
+const PhotoSection: React.FC<PhotoSectionProps> = ({ imageUrl, sectionText, direction, sectionHeader, sectionSubheader }) => {
 
     const isLeft = direction === "left";
-
 
     return (
         <Container sx={{ py: 6 }}>
@@ -30,7 +32,7 @@ const PhotoSection: React.FC<PhotoSectionProps> = ({ imageUrl, sectionText, dire
                         position: "relative",
                         width: "100%",
                         maxWidth: 500,
-                        height: 350,
+                        minHeight: 350,
                         borderRadius: 3,
                         overflow: "hidden",
                         flexShrink: 0,
@@ -43,18 +45,12 @@ const PhotoSection: React.FC<PhotoSectionProps> = ({ imageUrl, sectionText, dire
                         style={{ objectFit: "cover" }}
                     />
                 </Box>
-                <Box
-                    sx={{
-                        width: "100%",
-                        maxWidth: 500,
-                        display: "flex",
-                        alignItems: "center",
-                    }}
-                >
-                    <p>
-                        {sectionText}
-                    </p>
-                </Box>
+                <TextSection 
+                    sectionContent={sectionText}
+                    sectionHeader={sectionHeader}
+                    sectionSubheader={sectionSubheader}
+                    isPhoto={true}
+                />
             </Stack>
         </Container>
     );

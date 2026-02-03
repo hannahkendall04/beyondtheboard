@@ -20,6 +20,8 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
         height: "420px",
         position: "relative",
         overflow: "hidden",
+        marginTop: 2,
+        marginBottom: 2
       }}
     >
       <Box
@@ -27,7 +29,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
           position: "absolute",
           inset: 0,
           zIndex: -1,
-          opacity: .2
+          opacity: .25
         }}
       >
         <Image

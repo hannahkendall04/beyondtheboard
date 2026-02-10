@@ -29,7 +29,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
           position: "absolute",
           inset: 0,
           zIndex: -1,
-          opacity: .25
+          opacity: 0 // temp transparent - 0.25 is good for overlay
         }}
       >
         <Image

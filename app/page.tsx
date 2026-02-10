@@ -14,7 +14,7 @@ export default function Home() {
       >
         <TextSection 
           sectionContent="TEST TEXT"
-          sectionHeader="TEXT SECTION HEADER"
+          sectionHeader="About This Project"
           sectionSubheader="TEXT SECTION SUBHEADER"
         />
         <PhotoSection

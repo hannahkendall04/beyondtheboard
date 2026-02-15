@@ -11,7 +11,7 @@ interface HeaderOverlayProps {
 
 const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrimary, overlayTextSecondary }) => {
 
-  const imagePath = imageUrl ? imageUrl : "/images/default_background2.png"
+  const imagePath = imageUrl ? imageUrl : "/images/chalkboard4.png" // alternative: "/images/default_background2.png"
 
   return (
     <Box
@@ -20,7 +20,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
         height: "420px",
         position: "relative",
         overflow: "hidden",
-        marginTop: 2,
+        marginTop: 0,
         marginBottom: 2
       }}
     >
@@ -29,7 +29,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
           position: "absolute",
           inset: 0,
           zIndex: -1,
-          opacity: 0 // temp transparent - 0.25 is good for overlay
+          opacity: 1 // temp transparent - 0.25 is good for overlay
         }}
       >
         <Image
@@ -56,14 +56,15 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
           px: 2,
         }}
       >
-        <h1>
+        <h1 className="big-header">
           {overlayTextPrimary}
         </h1>
         {overlayTextSecondary && (
-          <h2>
+          <h2 className="title-subheader">
             {overlayTextSecondary}
           </h2>
         )}
+        <br/>
       </Box>
     </Box>
   );

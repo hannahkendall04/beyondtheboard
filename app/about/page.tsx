@@ -2,8 +2,12 @@
 import GenericPage from "../../components/GenericPage";
 import { aboutData } from "../../public/data/about";
 import { Card, CardContent, Container, CardMedia } from "@mui/material";
+import { useState } from 'react';
+import AboutCard from "../../components/AboutCard"
 
 export default function AboutPage() {
+
+  const isFlipped = useState(false);
 
   return (
     <main>
@@ -19,21 +23,13 @@ export default function AboutPage() {
             }}>
             {
             aboutData.map(person => (
-              <Card key={person.name} variant="outlined" sx={{
-                "width": 300,
-                "marginTop": 2
-              }}>
-                <CardMedia
-                  sx={{ height: 240 }}
-                  image={person.imageUrl}
-                  title={person.name}
-                />
-                <CardContent>
-                  <h1>{person.name}</h1>
-                  <h2>{person.role}</h2>
-                </CardContent>
-              </Card>
-
+              <AboutCard 
+                name={person.name} 
+                imageUrl={person.imageUrl}
+                role={person.role}
+                bio={person.bio}
+                key={person.name}
+              />
             ))
             }
         </Container>

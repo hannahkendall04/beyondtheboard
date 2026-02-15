@@ -16,7 +16,7 @@ interface GenericPageProps {
 const  GenericPage: React.FC<PropsWithChildren<GenericPageProps>> = ({route, pageTitle, pageSubtitle, pageImageRoute, children}) => {
   return (
     <main>
-      <Navbar route={route} scrollThreshold={75}/>
+      <Navbar route={route} scrollThreshold={15}/>
       <HeaderOverlay 
           imageUrl={pageImageRoute} 
           overlayTextPrimary={pageTitle} 

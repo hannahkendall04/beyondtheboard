@@ -10,7 +10,6 @@ export default function Home() {
         route="home"
         pageTitle="Beyond the Board"
         pageSubtitle="The effect of socioeconomic factors on student outcomes."
-        pageImageRoute="/images/default_background2.png"
       >
         <TextSection 
           sectionContent="TEST TEXT"

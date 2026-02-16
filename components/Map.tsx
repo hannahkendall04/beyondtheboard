@@ -1,15 +1,22 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef, } from "react";
 
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
 import am5geodata_usaLow from "@amcharts/amcharts5-geodata/usaLow";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import { Stack } from "@mui/material";
 
 import { mapData } from "../public/data/us-states";
 
-export default function MapChart() {
+interface MapChartProps {
+  mapHeader?: string,
+  mapSubheader?: string
+}
+
+
+const MapChart: React.FC<MapChartProps> = ({mapHeader, mapSubheader}) => {
   const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -94,16 +101,30 @@ export default function MapChart() {
       heatLegend.set("endValue", polygonSeries.getPrivate("valueHigh"));
     });
 
-    // Cleanup (VERY IMPORTANT)
+    // Cleanup
     return () => {
       root.dispose();
     };
   }, []);
 
   return (
-    <div
-      ref={chartRef}
-      style={{ width: "100%", height: "500px" }}
-    />
+      <Stack direction="column">
+          {
+              mapHeader ?
+              <h1 className="small-header">{mapHeader}</h1> :
+              <div></div>
+          }
+          {
+              mapSubheader ?
+              <h2>{mapSubheader}</h2> :
+              <div></div>
+          }
+          <div
+            ref={chartRef}
+            style={{ width: "100%", height: "500px" }}
+          />
+      </Stack>
   );
 }
+
+export default MapChart;

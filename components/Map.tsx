@@ -108,7 +108,7 @@ const MapChart: React.FC<MapChartProps> = ({mapHeader, mapSubheader}) => {
   }, []);
 
   return (
-      <Stack direction="column">
+      <Stack direction="column" sx={{marginTop: 3}}>
           {
               mapHeader ?
               <h1 className="small-header">{mapHeader}</h1> :

@@ -67,6 +67,11 @@ p {
   color: "#0F1C2E";
 }
 
+.page-divider {
+  font-size: 40px;
+  color: white;
+}
+
 .title-subheader {
   color: "#0F1C2E";
 }

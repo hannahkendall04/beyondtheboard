@@ -2,6 +2,8 @@
 import GenericPage from "@/components/GenericPage";
 import PhotoSection from "@/components/PhotoSection";
 import TextSection from "@/components/TextSection";
+import AboutSection from "@/components/AboutSection";
+import PageDivider from "@/components/PageDivider";
 
 export default function Home() {
   return (
@@ -28,6 +30,8 @@ export default function Home() {
           sectionText={["TEST TEXT"]}
           sectionHeader="ANOTHER HEADER"
         />
+        <PageDivider text="Meet the Team!" />
+        <AboutSection />
       </GenericPage>
     </div>
   );

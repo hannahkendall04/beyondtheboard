@@ -23,7 +23,9 @@ const TextSection: React.FC<TextSectionProps> = ({ sectionContent, sectionHeader
                 alignItems: "left",
                 alignSelf: "stretch",
                 flexDirection: "column",
-                marginTop: 10
+                marginTop: 10,
+                borderLeft: "4px solid var(--accent-2)", 
+                padding: 4,
             }}
         >
             <Stack direction="column">

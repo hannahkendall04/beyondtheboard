@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
             >
                 <Stack direction="row" spacing={3} sx={{ width: '100%', justifyContent: 'flex-end', marginRight: 5 }}>
                     <Link href="/" underline="hover" sx={{ fontWeight: route == "home" ? 'bold' : 'normal', color: 'inherit' }}>HOME</Link>
-                    <Link href="/about" underline="hover" sx={{ fontWeight: route == "about" ? 'bold' : 'normal', color: 'inherit' }}>ABOUT</Link>
+                    {/* <Link href="/about" underline="hover" sx={{ fontWeight: route == "about" ? 'bold' : 'normal', color: 'inherit' }}>ABOUT</Link> */}
                     <Link href="/data-critique" underline="hover" sx={{ fontWeight: route == "data" ? 'bold' : 'normal', color: 'inherit' }}>DATA CRITIQUE</Link>
                     <Link href="/narrative" underline="hover" sx={{ fontWeight: route == "narrative" ? 'bold' : 'normal', color: 'inherit' }}>NARRATIVE</Link>
                     <Link href="/sources" underline="hover" sx={{ fontWeight: route == "sources" ? 'bold' : 'normal', color: 'inherit' }}>SOURCES</Link>

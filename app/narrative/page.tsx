@@ -11,7 +11,7 @@ export default function NarrativePage() {
         route="narrative" 
         pageTitle="Narrative" 
       >
-        <TextSection sectionContent="a really good narrative making a really good argument..." sectionHeader="Header"/>
+        <TextSection sectionContent={["a really good narrative making a really good argument..."]} sectionHeader="Header"/>
         <Box sx={{ 
             // "marginBottom": 4,
             // "width": "90%"

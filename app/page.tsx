@@ -12,20 +12,20 @@ export default function Home() {
         pageSubtitle="The effect of socioeconomic factors on student outcomes."
       >
         <TextSection 
-          sectionContent="TEST TEXT"
+          sectionContent={["TEST TEXT"]}
           sectionHeader="About This Project"
           sectionSubheader="TEXT SECTION SUBHEADER"
         />
         <PhotoSection
           imageUrl="/images/image_placeholder.jpg"
           direction="left"
-          sectionText="TEST TEXT"
+          sectionText={["TEST TEXT"]}
           sectionHeader="TEST HEADER"
         />
         <PhotoSection
           imageUrl="/images/image_placeholder.jpg"
           direction="right"
-          sectionText="TEST TEXT"
+          sectionText={["TEST TEXT"]}
           sectionHeader="ANOTHER HEADER"
         />
       </GenericPage>

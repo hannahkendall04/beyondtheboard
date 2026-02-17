@@ -8,7 +8,7 @@ interface PhotoSectionProps {
     imageUrl: string,
     sectionHeader?: string,
     sectionSubheader?: string,
-    sectionText: string,
+    sectionText: string[],
     direction: string
 }
 

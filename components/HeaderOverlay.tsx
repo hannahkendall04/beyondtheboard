@@ -11,7 +11,7 @@ interface HeaderOverlayProps {
 
 const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrimary, overlayTextSecondary }) => {
 
-  const imagePath = imageUrl ? imageUrl : "/images/chalkboard4.png" // alternative: "/images/default_background2.png"
+  const imagePath = imageUrl ? imageUrl : "/images/chat_background.png" // alternative: "/images/default_background2.png"
 
   return (
     <Box
@@ -29,7 +29,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
           position: "absolute",
           inset: 0,
           zIndex: -1,
-          opacity: 1 // temp transparent - 0.25 is good for overlay
+          opacity: 0.6 // temp transparent - 0.25 is good for overlay
         }}
       >
         <Image
@@ -52,7 +52,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({ imageUrl, overlayTextPrim
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-          color: "white",
+          color: "#0F1C2E",
           px: 2,
         }}
       >

@@ -3,15 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent-1: #4cb1ff;
-  --accent-2: #4a4b4b;
-  --accent-3: #d0e6ff;
+  --accent-1: #E4572E;
+  --accent-2: #3A6EA5;
+  --accent-3: #6B8E23;
   --accent-4: #7cb078;
   --accent-5: #ff7f2d;
   --accent-6: #9c7bac;
-  --header-1: #4a4b4b;
-  --header-2: #8a817c;
-  --section-bg: #f5faf5;
+  --header-1: #0F1C2E;
+  --header-2: #222831;
+  --section-bg: #F7F9FB;
 }
 
 @theme inline {
@@ -64,9 +64,9 @@ p {
 
 .big-header {
   font-size: 40px;
-  color: white;
+  color: "#0F1C2E";
 }
 
 .title-subheader {
-  color: white;
+  color: "#0F1C2E";
 }

@@ -6,11 +6,12 @@ interface TextSectionProps {
     sectionContent: string[],
     sectionHeader?: string,
     sectionSubheader?: string,
-    isPhoto?: boolean
+    isPhoto?: boolean,
+    link?: string
 }
 
 
-const TextSection: React.FC<TextSectionProps> = ({ sectionContent, sectionHeader, sectionSubheader, isPhoto }) => {
+const TextSection: React.FC<TextSectionProps> = ({ sectionContent, sectionHeader, sectionSubheader, isPhoto, link }) => {
 
     return (
         <Box
@@ -33,7 +34,12 @@ const TextSection: React.FC<TextSectionProps> = ({ sectionContent, sectionHeader
                 }
                 {
                     sectionSubheader ?
-                    <h2>{sectionSubheader}</h2> :
+                    <h2>
+                        {
+                            link && link !== "" ? <a className="hover:underline" href={link}>{sectionSubheader}</a> 
+                            : sectionSubheader
+                        }
+                    </h2> :
                     <div></div>
                 }
                 {

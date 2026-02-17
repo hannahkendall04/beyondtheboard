@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
                 padding: 2,
                 height: 65,
                 bgcolor: scrolled ? 'var(--accent-2)' : 'transparent',
-                color: scrolled ? 'white' : 'var(--accent-2)',
+                color: scrolled ? 'white' : 'var(--header-2)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

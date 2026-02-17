@@ -17,6 +17,7 @@ export default function DataCritiquePage() {
               sectionHeader={dataset.title}
               sectionSubheader={dataset.description}
               sectionContent={dataset.critique}
+              link={dataset.link}
               />
           ))
         }

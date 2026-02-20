@@ -25,7 +25,7 @@ const TextSection: React.FC<TextSectionProps> = ({ sectionContent, sectionHeader
                 flexDirection: "column",
                 marginTop: 10,
                 borderLeft: "4px solid var(--accent-2)", 
-                padding: 4,
+                padding: 2,
             }}
         >
             <Stack direction="column">
@@ -38,7 +38,7 @@ const TextSection: React.FC<TextSectionProps> = ({ sectionContent, sectionHeader
                     sectionSubheader ?
                     <h2>
                         {
-                            link && link !== "" ? <a className="hover:underline" href={link}>{sectionSubheader}</a> 
+                            link && link !== "" ? <a className="hover:underline" href={link} target="_blank">{sectionSubheader}</a> 
                             : sectionSubheader
                         }
                     </h2> :

@@ -13,7 +13,8 @@ export default function NarrativePage3() {
         route="narrative" 
         pageTitle="Narrative" 
       >
-        <TableauComponent source="https://public.tableau.com/views/RQ3_17718811344180/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" />
+        <TableauComponent source="https://public.tableau.com/views/RQ3revised/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" />
+        <TableauComponent source="https://public.tableau.com/views/RQ3-2_17720473667440/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" />
         <Box sx={{
           display: 'flex',
           justifyContent: 'flex-start'

@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
           letter-spacing: 0.13em;
           text-transform: uppercase;
           text-decoration: none;
-          color: #1a1714;
+          color: #c8bfb3;
           transition: color 0.2s;
           position: relative;
           padding-bottom: 2px;
@@ -125,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
           background: none;
           border: none;
           cursor: pointer;
-          color: #1a1714;
+          color: #c8bfb3;
           padding: 0 0 2px;
           transition: color 0.2s;
           font-family: 'DM Sans', sans-serif;

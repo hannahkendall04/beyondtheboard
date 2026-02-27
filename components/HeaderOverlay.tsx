@@ -13,7 +13,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({
   overlayTextPrimary,
   overlayTextSecondary,
 }) => {
-  const imagePath = imageUrl ?? "/images/chat_background.png";
+  const imagePath = imageUrl ?? "/images/header_bg.jpg";
 
   return (
     <>
@@ -36,7 +36,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({
 
         .header-overlay-image img {
           object-fit: cover;
-          filter: saturate(0.7) brightness(0.55);
+          filter: saturate(0.7) brightness(0.4);
         }
 
         /* Gradient vignette layered over image */
@@ -84,13 +84,13 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({
 
         .header-overlay-eyebrow-line {
           width: 40px;
-          height: 1px;
+          height: 3px;
           background: rgba(196, 168, 130, 0.6);
         }
 
         .header-overlay-eyebrow-dot {
-          width: 4px;
-          height: 4px;
+          width: 6px;
+          height: 6px;
           border-radius: 50%;
           background: #c4a882;
           opacity: 0.8;
@@ -98,7 +98,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({
 
         .header-overlay-primary {
           font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(36px, 6vw, 64px);
+          font-size: clamp(36px, 6vw, 72px);
           font-weight: 300;
           color: #faf9f7;
           letter-spacing: 0.03em;
@@ -109,7 +109,7 @@ const HeaderOverlay: React.FC<HeaderOverlayProps> = ({
 
         .header-overlay-secondary {
           font-family: 'DM Sans', sans-serif;
-          font-size: 11px;
+          font-size: 14px;
           font-weight: 400;
           color: #c4a882;
           letter-spacing: 0.18em;

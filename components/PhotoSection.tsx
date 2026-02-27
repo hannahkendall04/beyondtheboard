@@ -27,7 +27,6 @@ const PhotoSection: React.FC<PhotoSectionProps> = ({
 
         .photo-section {
           width: 100%;
-          padding: 64px 24px;
           box-sizing: border-box;
         }
 

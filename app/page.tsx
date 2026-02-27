@@ -19,11 +19,13 @@ export default function Home() {
           sectionSubheader="TEXT SECTION SUBHEADER"
         />
         <PhotoSection
-          imageUrl="/images/image_placeholder.jpg"
+          imageUrl="/images/classroom2.jpg"
           direction="right"
           sectionText={["TEST TEXT"]}
           sectionHeader="ANOTHER HEADER"
         />
+        <br />
+        <br />
         <PageDivider text="Meet the Team!" />
         <AboutSection />
       </GenericPage>

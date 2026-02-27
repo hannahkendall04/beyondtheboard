@@ -45,7 +45,7 @@ const GenericPage: React.FC<PropsWithChildren<GenericPageProps>> = ({
       `}</style>
 
       <main className="generic-page">
-        <Navbar route={route} scrollThreshold={0} />
+        <Navbar route={route} scrollThreshold={35} />
         <HeaderOverlay
           imageUrl={pageImageRoute}
           overlayTextPrimary={pageTitle}

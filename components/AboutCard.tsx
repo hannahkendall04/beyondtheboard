@@ -18,7 +18,7 @@ const AboutCard: React.FC<AboutCardProps> = ({ name, imageUrl, role, bio }) => {
 
         .about-card-scene {
           width: 300px;
-          height: 400px;
+          height: 430px;
           perspective: 1000px;
           margin-top: 16px;
           font-family: 'DM Sans', sans-serif;
@@ -56,7 +56,7 @@ const AboutCard: React.FC<AboutCardProps> = ({ name, imageUrl, role, bio }) => {
         /* Front face */
         .card-image {
           width: 100%;
-          height: 260px;
+          height: 280px;
           object-fit: cover;
           display: block;
           filter: saturate(0.9);

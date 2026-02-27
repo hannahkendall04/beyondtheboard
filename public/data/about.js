@@ -2,8 +2,8 @@ export const aboutData = [
     {
         "name": "Victoria Chan",
         "role": "Content Developer",
-        "imageUrl": "",
-        "bio": "Hi! My name is Victoria, and I am a 3rd year statistics and data science major. As the Content Developer for this project, I was responsible for creating the timeline and organizing and refining our narrative to ensure our argument flowed smoothly. I also helped address any gaps in our story by incorporating more context to strengthen our analysis."
+        "imageUrl": "/images/victoria",
+        "bio": "Hi! My name is Victoria, and I am a 3rd year Statistics & Data Science major. As the Content Developer for this project, I was responsible for creating the timeline and organizing and refining our narrative to ensure our argument flowed smoothly. I also helped address any gaps in our story by incorporating more context to strengthen our analysis."
     },
     {
         "name": "Joseph Choi",
@@ -32,7 +32,7 @@ export const aboutData = [
     {
         "name": "Vikas Sundar",
         "role": "Data Specialist",
-        "imageUrl": "",
-        "bio": "Hi everyone. My name is Vikas, and I’m a fourth-year Statistics and Data Science and Economics major. In my role as the team’s data specialist, I assembled datasets and used programming to analyze them, uncover key trends, and support the creation of clear, data-driven visualizations."
+        "imageUrl": "/images/vikas.png",
+        "bio": "Hi everyone. My name is Vikas, and I’m a fourth-year Statistics & Data Science and Economics major. In my role as the team’s data specialist, I assembled datasets and used programming to analyze them, uncover key trends, and support the creation of clear, data-driven visualizations."
     }
 ]

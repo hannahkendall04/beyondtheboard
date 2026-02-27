@@ -2,19 +2,19 @@ export const aboutData = [
     {
         "name": "Victoria Chan",
         "role": "Content Developer",
-        "imageUrl": "/images/victoria",
+        "imageUrl": "/images/victoria.jpg",
         "bio": "Hi! My name is Victoria, and I am a 3rd year Statistics & Data Science major. As the Content Developer for this project, I was responsible for creating the timeline and organizing and refining our narrative to ensure our argument flowed smoothly. I also helped address any gaps in our story by incorporating more context to strengthen our analysis."
     },
     {
         "name": "Joseph Choi",
         "role": "Editor",
-        "imageUrl": "",
+        "imageUrl": "/images/joseph.png",
         "bio": "My name is Joseph, and I am a 4th year Statistics & Data Science major. I established the overall direction of the project and oversaw all other areas, ensuring that each component aligned with our goals and maintained a consistent standard of quality.As the editor of this project, I carefully reviewed all sections of the work prior to publication, ensuring clarity, accuracy, and overall quality across the final submission."
     },
     {
         "name": "Cristopher Espino",
         "role": "Project Manager",
-        "imageUrl": "",
+        "imageUrl": "/images/cris.jpg",
         "bio": "Hello! My name is Cris (he/him), and I am a fourth-year Education and Social Transformation Studies major with a minor in Labor Studies. As the Project Manager for the Beyond the Board initiative."
     },
     {
@@ -26,7 +26,7 @@ export const aboutData = [
     {
         "name": "Audrey Shen",
         "role": "Data Visualization Specialist",
-        "imageUrl": "",
+        "imageUrl": "/images/audrey.png",
         "bio": "I’m Audrey, and I’m a 3rd year Cognitive Science major. As the Data Visualization Specialist, I was responsible for translating complex datasets into clear visual narratives."
     },
     {

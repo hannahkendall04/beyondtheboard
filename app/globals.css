@@ -1,17 +1,27 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf9f7;
+  --foreground: #1a1714;
+
+  --accent-gold:   #c4a882;
+  --accent-gold-subtle: rgba(196, 168, 130, 0.2);
+
+  /* Legacy accent vars — kept for backward compat */
   --accent-1: #E4572E;
-  --accent-2: #3A6EA5;
+  --accent-2: #c4a882;   /* was --accent-2 blue, now unified to gold */
   --accent-3: #6B8E23;
   --accent-4: #7cb078;
   --accent-5: #ff7f2d;
   --accent-6: #9c7bac;
-  --header-1: #0F1C2E;
-  --header-2: #222831;
-  --section-bg: #F7F9FB;
+
+  --header-1: #1a1714;
+  --header-2: #4a4340;
+  --section-bg: #faf9f7;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
 }
 
 @theme inline {
@@ -21,57 +31,141 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed; 
+    --background: #141210;
+    --foreground: #e8e2da;
+    --header-1: #f0ebe4;
+    --header-2: #c8bfb3;
+    --section-bg: #141210;
   }
+}
+
+/* ─── Base ─────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--section-bg);
-  font-family: var(--primary-font);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography ────────────────────────────────────────── */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin-top: 0;
 }
 
 h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
   color: var(--header-1);
-  font-family: var(--primary-font);
-  font-size: 30px;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
 }
 
 h2 {
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 300;
   color: var(--header-2);
-  font-family: var(--primary-font);
-  font-weight: 200;
-  font-size: 20px;
-  margin-bottom: 15px;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  color: var(--header-1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 p {
   color: var(--header-2);
-  font-family: var(--primary-font);
+  font-family: var(--font-body);
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.8;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-gold-subtle);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+a:hover {
+  color: var(--header-1);
+  border-color: currentColor;
+}
+
+/* ─── Layout helpers ────────────────────────────────────── */
+
 .page-container {
-  margin-top: 70;
-  margin-bottom: 20;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+
+/* ─── Type scale utilities ──────────────────────────────── */
+
+.big-header {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 300;
+  color: var(--header-1);
+  letter-spacing: 0.03em;
+  line-height: 1.1;
 }
 
 .small-header {
-  font-size: 20px
-}
-
-.big-header {
-  font-size: 40px;
-  color: "#0F1C2E";
-}
-
-.page-divider {
-  font-size: 40px;
-  color: white;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--header-1);
 }
 
 .title-subheader {
-  color: "#0F1C2E";
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent-gold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* ─── Divider ───────────────────────────────────────────── */
+
+.page-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-gold-subtle) 20%,
+    var(--accent-gold-subtle) 80%,
+    transparent
+  );
+  margin: 48px 0;
+  border: none;
 }

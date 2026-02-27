@@ -20,12 +20,6 @@ export default function Home() {
         />
         <PhotoSection
           imageUrl="/images/image_placeholder.jpg"
-          direction="left"
-          sectionText={["TEST TEXT"]}
-          sectionHeader="TEST HEADER"
-        />
-        <PhotoSection
-          imageUrl="/images/image_placeholder.jpg"
           direction="right"
           sectionText={["TEST TEXT"]}
           sectionHeader="ANOTHER HEADER"

@@ -9,10 +9,10 @@ interface NarrativeNavProps {
 }
 
 const NarrativeNav: React.FC<NarrativeNavProps> = ({
-  prevHref = "/narrative_1",
-  prevLabel = "Research Question 1",
-  nextHref = "/narrative_3",
-  nextLabel = "Research Question 3",
+  prevHref,
+  prevLabel,
+  nextHref,
+  nextLabel,
 }) => {
   return (
     <>

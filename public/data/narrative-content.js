@@ -1,0 +1,9 @@
+export const narrativeContent = {
+    "homePage": {
+        "introduction_1": "When a human being is born, they do not have the choice of how wealthy their parents are, where they live, or what types of obstacles they will face in their lives. These circumstances, which are determined long before an individual can exercise agency, shape access to resources, opportunities, and institutional support from an early age. As Nelson Mandela once stated, “Education is the most powerful weapon which you can use to change the world.” This idea highlights why unequal access to education is such a critical issue: when educational opportunities are distributed unevenly, the ability to create change and achieve upward mobility becomes unevenly distributed as well. Therefore, the main goal of this project is to demonstrate that educational inequality is systemic rather than random. To investigate this issue, the project is guided by three research questions:",
+        "introduction_2": "The first question addresses who is most affected, the second examines where inequalities occur, and the third analyzes the broader consequences of educational inequality.",
+        "rq1": "What do differences in student dropout and academic success outcomes across institutional and structural factors reveal about systemic inequality in education?",
+        "rq2": "What do geographic differences in educational attainment reveal about systemic inequality in access to education?",
+        "rq3": "What are the long-term economic consequences of educational inequality, as reflected in differences in unemployment rates and wages by education level and gender over time?"
+    }
+}

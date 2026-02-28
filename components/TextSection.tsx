@@ -24,7 +24,6 @@ const TextSection: React.FC<TextSectionProps> = ({
         .text-section {
           font-family: 'DM Sans', sans-serif;
           width: 100%;
-          max-width: ${isPhoto ? "500px" : "100%"};
           ${sectionContent.length !== 0 ? "min-height: 250px;" : ""}
           display: flex;
           flex-direction: column;
@@ -98,7 +97,7 @@ const TextSection: React.FC<TextSectionProps> = ({
         }
       `}</style>
 
-      <div className="text-section">
+      <div className="text-section" style={{ maxWidth: isPhoto ? "500px" : "100%", marginBottom: 25 }}>
         {sectionHeader && (
           <h2 className="text-section-header">{sectionHeader}</h2>
         )}

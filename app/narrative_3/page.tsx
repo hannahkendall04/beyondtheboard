@@ -1,10 +1,7 @@
 "use client";
 import GenericPage from "@/components/GenericPage";
-import MapChart from "@/components/Map";
-import TextSection from "@/components/TextSection";
-import { Box, Link } from "@mui/material";
-import WestIcon from '@mui/icons-material/West';
 import TableauComponent from "@/components/TableauComponent";
+import NarrativeNav from "@/components/NarrativeNav";
 
 export default function NarrativePage3() {
   return (
@@ -15,19 +12,12 @@ export default function NarrativePage3() {
       >
         <TableauComponent source="https://public.tableau.com/views/RQ3revised/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" />
         <TableauComponent source="https://public.tableau.com/views/RQ3-2_17720473667440/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" />
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'flex-start'
-        }}>
-          <Link 
-            href="/narrative_2" 
-            underline="none" 
-          >
-            <WestIcon />
-            &nbsp;
-            Research Question 2
-          </Link>
-        </Box>
+        <NarrativeNav
+          prevHref="/narrative_2"
+          prevLabel="Research Question 2"
+          nextHref="/conclusion"
+          nextLabel="Conclusion"
+        />
       </GenericPage>
     </main>
   );

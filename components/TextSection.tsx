@@ -24,7 +24,6 @@ const TextSection: React.FC<TextSectionProps> = ({
         .text-section {
           font-family: 'DM Sans', sans-serif;
           width: 100%;
-          ${sectionContent.length !== 0 ? "min-height: 250px;" : ""}
           display: flex;
           flex-direction: column;
           align-self: stretch;

@@ -49,9 +49,19 @@ export default function NarrativePage() {
           sectionSubheader="Visualization Analysis"
           sectionContent={[narrativeContent.narrative1.analysis_3]}
         />
+        <TextSection 
+            sectionSubheader="Answer to Research Question"
+            sectionContent={[
+                narrativeContent.narrative1.rq_answer_1,
+                narrativeContent.narrative1.rq_answer_2,
+                narrativeContent.narrative1.rq_answer_3,
+            ]}
+        />
         <NarrativeNav
           nextHref="/narrative_2"
           nextLabel="Research Question 2"
+          prevHref="/timeline"
+          prevLabel="Timeline"
         />
       </GenericPage>
     </main>

@@ -251,6 +251,9 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
             </button>
 
             <div className={`navbar-dropdown-menu${menuOpen ? " open" : ""}`} role="menu">
+              <a href="timeline" className="navbar-dropdown-item" onClick={() => setMenuOpen(false)}>
+                Timeline
+              </a>
               <a href="narrative_1" className="navbar-dropdown-item" onClick={() => setMenuOpen(false)}>
                 Research Question 1
               </a>

@@ -43,6 +43,6 @@ export const narrativeContent = {
         "analysis_3": "Geographic disparities further highlight the need for regional investment in educational infrastructure, digital access, and local institutional capacity. Strengthening connections between education systems and regional economic opportunities can help reduce spatial inequality in attainment and outcomes. Moreover, place-based funding initiatives can help address persistent regional gaps by directing resources toward historically underfunded regions. While these interventions do not address every dimension of educational inequality, they represent an important step toward fostering more equitable educational pathways. Ultimately, equitable education systems must be designed not only to admit students, but to sustain them."
     },
     "timeline": {
-        "context": "TBD"
+        "context": "Inequality in education has a complicated and extensive global history... (TBD)"
     }
 }

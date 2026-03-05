@@ -15,7 +15,7 @@ export default function Home() {
       <GenericPage
         route="home"
         pageTitle="Beyond the Board"
-        pageSubtitle="The effect of socioeconomic factors on student outcomes."
+        pageSubtitle="The effects of race and socioeconomic factors on student outcomes."
       >
         <TextSection 
           sectionContent={[narrativeContent.homePage.introduction_1]}

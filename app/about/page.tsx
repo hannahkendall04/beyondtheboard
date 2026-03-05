@@ -1,13 +1,10 @@
 "use client";
-import GenericPage from "../../components/GenericPage";
-import { aboutData } from "../../public/data/about";
-import { Card, CardContent, Container, CardMedia } from "@mui/material";
-import { useState } from 'react';
-import AboutCard from "../../components/AboutCard"
+import AboutSection from '@/components/AboutSection';
+import GenericPage from '@/components/GenericPage';
+import PageDivider from '@/components/PageDivider';
 
 export default function AboutPage() {
 
-  const isFlipped = useState(false);
 
   return (
     <main>
@@ -15,24 +12,8 @@ export default function AboutPage() {
         route="about" 
         pageTitle="About" 
       >
-        <Container 
-            sx={{
-              "display": "flex",
-              "flexWrap": "wrap",
-              "justifyContent": "space-evenly",
-            }}>
-            {
-            aboutData.map(person => (
-              <AboutCard 
-                name={person.name} 
-                imageUrl={person.imageUrl}
-                role={person.role}
-                bio={person.bio}
-                key={person.name}
-              />
-            ))
-            }
-        </Container>
+        <PageDivider text="Meet the Team!" />
+        <AboutSection />
       </GenericPage>
     </main>
   );

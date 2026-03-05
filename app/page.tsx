@@ -2,10 +2,12 @@
 import GenericPage from "@/components/GenericPage";
 import PhotoSection from "@/components/PhotoSection";
 import TextSection from "@/components/TextSection";
-import AboutSection from "@/components/AboutSection";
+// import AboutSection from "@/components/AboutSection";
 import PageDivider from "@/components/PageDivider";
 import { narrativeContent } from "../public/data/narrative-content";
 import ResearchQuestionCard from "@/components/ResearchQuestionCard";
+import { Box } from '@mui/material';
+import TimelineEmbed from "@/components/TimelineEmbed";
 
 export default function Home() {
   return (
@@ -32,8 +34,14 @@ export default function Home() {
         />
         <br />
         <br />
-        <PageDivider text="Meet the Team!" />
-        <AboutSection />
+        <PageDivider text="Timeline" />
+        {/* <AboutSection /> */}
+        <Box sx={{ 
+            "marginBottom": 5,
+            "marginTop": 5,
+            }}>
+                <TimelineEmbed />
+        </Box>
       </GenericPage>
     </div>
   );

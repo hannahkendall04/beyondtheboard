@@ -251,9 +251,9 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
             </button>
 
             <div className={`navbar-dropdown-menu${menuOpen ? " open" : ""}`} role="menu">
-              <a href="timeline" className="navbar-dropdown-item" onClick={() => setMenuOpen(false)}>
+              {/* <a href="timeline" className="navbar-dropdown-item" onClick={() => setMenuOpen(false)}>
                 Timeline
-              </a>
+              </a> */}
               <a href="narrative_1" className="navbar-dropdown-item" onClick={() => setMenuOpen(false)}>
                 Research Question 1
               </a>
@@ -271,6 +271,9 @@ const Navbar: React.FC<NavbarProps> = ({ route, scrollThreshold }) => {
 
           <a href="/sources" className={`navbar-link${isActive("sources") ? " active" : ""}`}>
             Sources
+          </a>
+          <a href="/about" className={`navbar-link${isActive("about") ? " active" : ""}`}>
+            About
           </a>
         </div>
       </nav>

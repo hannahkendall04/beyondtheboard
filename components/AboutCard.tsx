@@ -53,7 +53,6 @@ const AboutCard: React.FC<AboutCardProps> = ({ name, imageUrl, role, bio }) => {
           transform: rotateY(180deg);
         }
 
-        /* Front face */
         .card-image {
           width: 100%;
           height: 280px;
@@ -180,6 +179,66 @@ const AboutCard: React.FC<AboutCardProps> = ({ name, imageUrl, role, bio }) => {
 
         .about-card-scene:hover .card-back-close {
           color: #8c7e6e;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .about-card-face {
+            border-color: #2e2a26;
+            background: #1c1916;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.15);
+          }
+
+          .card-front-content {
+            border-top-color: #2e2a26;
+          }
+
+          .card-name {
+            color: #ede8e2;
+          }
+
+          .card-role {
+            color: #7a6e62;
+          }
+
+          .card-flip-hint {
+            color: #3e3830;
+          }
+
+          .about-card-scene:hover .card-flip-hint {
+            color: #7a6e62;
+          }
+
+          .card-back-inner {
+            background: #111009;
+          }
+
+          .card-back-accent {
+            background: #a8865a;
+          }
+
+          .card-back-name {
+            color: #ede8e2;
+          }
+
+          .card-back-role {
+            color: #a8865a;
+          }
+
+          .card-back-divider {
+            background: rgba(255,255,255,0.05);
+          }
+
+          .card-bio {
+            color: #a09690;
+          }
+
+          .card-back-close {
+            color: #3e3830;
+          }
+
+          .about-card-scene:hover .card-back-close {
+            color: #6e6258;
+          }
         }
       `}</style>
 

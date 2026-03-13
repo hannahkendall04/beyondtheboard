@@ -88,6 +88,20 @@ const PhotoSection: React.FC<PhotoSectionProps> = ({
             min-height: 280px;
           }
         }
+
+        @media (prefers-color-scheme: dark) {
+          .photo-section-image-wrap::after {
+            border-color: rgba(168, 134, 90, 0.2);
+          }
+
+          .photo-section-image-wrap img {
+            filter: saturate(0.78) brightness(0.92);
+          }
+
+          .photo-section-image-wrap:hover img {
+            filter: saturate(0.95) brightness(0.97);
+          }
+        }
       `}</style>
 
       <section className="photo-section">

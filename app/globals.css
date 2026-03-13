@@ -8,9 +8,8 @@
   --accent-gold:   #c4a882;
   --accent-gold-subtle: rgba(196, 168, 130, 0.2);
 
-  /* Legacy accent vars — kept for backward compat */
   --accent-1: #E4572E;
-  --accent-2: #c4a882;   /* was --accent-2 blue, now unified to gold */
+  --accent-2: #c4a882;
   --accent-3: #6B8E23;
   --accent-4: #7cb078;
   --accent-5: #ff7f2d;
@@ -22,6 +21,25 @@
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:           #141210;
+    --foreground:           #e8e2da;
+
+    --accent-gold:          #c4a882;
+    --accent-gold-subtle:   rgba(196, 168, 130, 0.15);
+
+    --header-1:             #f0ebe4;
+    --header-2:             #c8bfb3;
+    --section-bg:           #141210;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 @theme inline {

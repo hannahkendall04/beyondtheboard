@@ -164,6 +164,54 @@ const SourceCard: React.FC<SourceCardProps> = ({ title, citation, analysis, link
           margin: 0;
           font-style: normal;
         }
+
+        @media (prefers-color-scheme: dark) {
+          .source-card {
+            border-top-color: #2e2a26;
+          }
+
+          .source-card:last-child {
+            border-bottom-color: #2e2a26;
+          }
+
+          .source-card-title {
+            color: #ede8e2;
+          }
+
+          .source-card-citation {
+            color: #7a6e62;
+          }
+
+          .source-card-link {
+            color: #a8865a;
+            border-bottom-color: rgba(168, 134, 90, 0.3);
+          }
+
+          .source-card-link:hover {
+            color: #ede8e2;
+            border-color: #ede8e2;
+          }
+
+          .source-card-toggle {
+            color: #7a6e62;
+          }
+
+          .source-card-toggle:hover {
+            color: #ede8e2;
+          }
+
+          .source-card-analysis {
+            border-left-color: rgba(168, 134, 90, 0.3);
+          }
+
+          .source-card-analysis-eyebrow {
+            color: #a8865a;
+          }
+
+          .source-card-analysis-text {
+            color: #b0a89e;
+          }
+        }
       `}</style>
 
       <div className="source-card">

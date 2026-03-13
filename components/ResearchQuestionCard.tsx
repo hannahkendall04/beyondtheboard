@@ -119,6 +119,46 @@ const ResearchQuestionCard: React.FC<ResearchQuestionCardProps> = ({ question, i
           stroke-width: 2;
           fill: none;
         }
+
+        @media (prefers-color-scheme: dark) {
+          .rq-card {
+            background: #1c1916;
+            border-color: #2e2a26;
+          }
+
+          .rq-card::before {
+            background: linear-gradient(to bottom, #a8865a, rgba(168, 134, 90, 0.1));
+          }
+
+          .rq-card:hover {
+            border-color: rgba(168, 134, 90, 0.4);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+          }
+
+          .rq-card-index {
+            color: rgba(168, 134, 90, 0.15);
+          }
+
+          .rq-card:hover .rq-card-index {
+            color: rgba(168, 134, 90, 0.35);
+          }
+
+          .rq-card-question {
+            color: #ede8e2;
+          }
+
+          .rq-card-footer {
+            border-top-color: #2e2a26;
+          }
+
+          .rq-card-label {
+            color: #7a6e62;
+          }
+
+          .rq-card-arrow {
+            color: #a8865a;
+          }
+        }
       `}</style>
 
       <a className="rq-card" href={href ?? "#"}>

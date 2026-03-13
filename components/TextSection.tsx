@@ -94,6 +94,38 @@ const TextSection: React.FC<TextSectionProps> = ({
           font-weight: 300;
           margin: 0;
         }
+
+        @media (prefers-color-scheme: dark) {
+          .text-section::before {
+            background: linear-gradient(to bottom, #a8865a, rgba(168, 134, 90, 0.1));
+          }
+
+          .text-section-header {
+            color: #ede8e2;
+          }
+
+          .text-section-subheader {
+            color: #7a6e62;
+          }
+
+          .text-section-subheader a {
+            color: #7a6e62;
+            border-bottom-color: rgba(122, 110, 98, 0.35);
+          }
+
+          .text-section-subheader a:hover {
+            color: #a8865a;
+            border-color: #a8865a;
+          }
+
+          .text-section-divider {
+            background: #2e2a26;
+          }
+
+          .text-section-paragraph {
+            color: #b0a89e;
+          }
+        }
       `}</style>
 
       <div className="text-section" style={{ maxWidth: isPhoto ? "500px" : "100%", marginBottom: 25 }}>

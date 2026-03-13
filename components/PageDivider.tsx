@@ -46,7 +46,6 @@ const PageDivider: React.FC<PageDividerProps> = ({ text }) => {
         .page-divider-line.left  { --dir: right; }
         .page-divider-line.right { --dir: left; }
 
-        /* No-text: single centered gradient line */
         .page-divider-line.full {
           background: linear-gradient(
             to right,
@@ -82,6 +81,35 @@ const PageDivider: React.FC<PageDividerProps> = ({ text }) => {
           background: #c4a882;
           transform: rotate(45deg);
           opacity: 0.7;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .page-divider-line {
+            background: linear-gradient(
+              to var(--dir, right),
+              transparent,
+              rgba(168, 134, 90, 0.35)
+            );
+          }
+
+          .page-divider-line.full {
+            background: linear-gradient(
+              to right,
+              transparent,
+              rgba(168, 134, 90, 0.35) 30%,
+              rgba(168, 134, 90, 0.35) 70%,
+              transparent
+            );
+          }
+
+          .page-divider-text {
+            color: #ede8e2;
+          }
+
+          .page-divider-diamond {
+            background: #a8865a;
+            opacity: 0.6;
+          }
         }
       `}</style>
 

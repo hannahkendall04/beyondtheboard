@@ -39,5 +39,5 @@ export default function TableauComponent({ source, width = '100%', height = '600
     };
   }, [source, width, height]);
 
-  return <div ref={containerRef} style={{ width, minHeight: height }} />;
+  return <div ref={containerRef} style={{ width, minHeight: height, maxWidth: "90%", justifySelf: "center"}} />;
 }

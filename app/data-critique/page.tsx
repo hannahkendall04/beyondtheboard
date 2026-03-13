@@ -10,6 +10,7 @@ export default function DataCritiquePage() {
         route="data" 
         pageTitle="Data Critique" 
       >
+        <h3>Link to Consolidated Dataset: <a href="https://docs.google.com/spreadsheets/d/1_2d2y4YjS0lv0OFw3pPa1zSbrjtccjxgVy-ETD305_8/edit?gid=0#gid=0">Final Datasets</a></h3>
         {
           dataCritiques.map(dataset => (
             <TextSection

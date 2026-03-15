@@ -15,7 +15,7 @@ export const aboutData = [
         "name": "Cristopher Espino",
         "role": "Project Manager",
         "imageUrl": "/images/cris.jpg",
-        "bio": "Hello! My name is Cris (he/him), and I am a fourth-year Education and Social Transformation Studies major with a minor in Labor Studies. As the Project Manager for the Beyond the Board initiative."
+        "bio": "Hello! My name is Cris (he/him), and I am a fourth-year Education and Social Transformation Studies major with a minor in Labor Studies. As the Project Manager for the Beyond the Board initiative, I oversaw the project from a bird's-eye perspective, guiding the process from start to finish. I coordinated meetings, tracked progress, ensured submissions were completed on time, and helped make sure our final deliverables met all required standards."
     },
     {
         "name": "Hannah Kendall",

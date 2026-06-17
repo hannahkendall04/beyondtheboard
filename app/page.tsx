@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <GenericPage
         route="home"
-        pageTitle="JIMMY HAB"
+        pageTitle="Beyond the Board"
         pageSubtitle="The effects of race and socioeconomic factors on student outcomes."
       >
         <TextSection 
